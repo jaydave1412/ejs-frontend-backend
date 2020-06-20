@@ -1,15 +1,15 @@
 const { src, dest, watch, series, parallel } = require('gulp');
-const browserify = require('gulp-browserify');
-const nodemon = require('gulp-nodemon');
+const bro = require('gulp-bro');
+//const nodemon = require('gulp-nodemon');
 
 const files={
-    client: 'public/app.js',
+    client: 'public/*.js',
     server:'server.js'
 }
 
 function client(){
     return src(files.client).
-    pipe(browserify()).
+    pipe(bro()).
     pipe(dest('public/dist'))
 }
 // function server(){
