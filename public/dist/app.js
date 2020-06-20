@@ -5672,7 +5672,7 @@
 const moment = require('moment');
 const hello = require('../public/util/app2');
 console.log(moment());
-hello("helloo i am jay");
+hello("helloo i am jay dave");
 },{"../public/util/app2":3,"moment":1}],3:[function(require,module,exports){
 demo = function(hello){
     console.log(hello);
